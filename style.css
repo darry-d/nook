@@ -1102,3 +1102,57 @@ body {
     }
 
 }
+/* ========================================= */
+/* ЛАБОРАТОРНА РОБОТА 9: АДАПТИВНІСТЬ (ВАРІАНТ 3) */
+/* ========================================= */
+
+@media screen and (max-width: 1024px) {
+    /* Зміна ширини sidebar за вимогою методички */
+    .catalog-layout {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    
+    .catalog-sidebar {
+        width: 100%; /* Основна вимога виконана */
+        position: relative; 
+        top: 0;
+    }
+
+    .catalog-content {
+        width: 100%;
+    }
+
+    /* Адаптація сітки товарів під 1024px */
+    .catalog-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .catalog-grid .product-item:nth-child(n) {
+        grid-column: span 2;
+    }
+    
+    .custom-sort select {
+        transform: none;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Мінімальна ширина екрану за варіантом 3 */
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .catalog-grid .product-item:nth-child(n) {
+        grid-column: span 1;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero-content {
+        transform: translateX(-15px); 
+    }
+}
