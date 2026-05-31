@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOOK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <header class="header container">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li class="dropdown-trigger">
+                    <a href="catalog.html">Каталог</a>
+                    
+                    <ul class="dropdown-menu">
+                        <li class="has-nested-dropdown">
+                            <a href="catalog.html" class="dropdown-item-arrow">Декоративні таці</a>
+                            <ul class="nested-dropdown-menu">
+                                <li><a href="catalog.html">Бетонні таці</a></li>
+                                <li><a href="catalog.html">Керамічні таці</a></li>
+                                <li><a href="catalog.html">Дерев'яні підставки</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-nested-dropdown">
+                            <a href="#" class="dropdown-item-arrow">Скульптурні свічки</a>
+                            <ul class="nested-dropdown-menu">
+                                <li><a href="#">Фігурні свічки</a></li>
+                                <li><a href="#">Свічки в склі</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-nested-dropdown">
+                            <a href="#" class="dropdown-item-arrow">Керамічні вази</a>
+                            <ul class="nested-dropdown-menu">
+                                <li><a href="#">Глиняні кашпо</a></li>
+                                <li><a href="#">Матові вази</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-nested-dropdown">
+                            <a href="#" class="dropdown-item-arrow">Аромати для дому</a>
+                            <ul class="nested-dropdown-menu">
+                                <li><a href="#">Дифузори</a></li>
+                                <li><a href="#">Пахощі</a></li>
+                                <li><a href="#">Спреї</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Про нас</a></li>
+            </ul>
+        </nav>
+        
+        <div class="logo">NOOK</div>
+        
+        <div class="icons">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A3324" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A3324" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </div>
+    </header>
+    <!-- ========================================= -->
+<!-- СТОРІНКА ОКРЕМОГО ТОВАРУ -->
+<!-- ВСТАВИТИ МІЖ HEADER І FOOTER -->
+<!-- ========================================= -->
+
+<main class="product-page container">
+
+    <!-- Хлібні крихти -->
+    <div class="product-breadcrumbs">
+        <a href="index.html">Головна</a>
+        <span>/</span>
+        <a href="catalog.html">Каталог</a>
+        <span>/</span>
+        <p>Декоративна таця</p>
+    </div>
+
+    <!-- ГОЛОВНИЙ БЛОК -->
+    <section class="product-layout">
+
+        <!-- ЛІВА ЧАСТИНА -->
+        <div class="product-gallery">
+
+            <!-- ГОЛОВНА КАРТИНКА -->
+            <!-- СЮДИ ВСТАВ СВОЮ ГОЛОВНУ ФОТОГРАФІЮ -->
+             <img src="images/stuff3.png" alt="Таця" class="main-product-image">
+
+            <!-- МАЛЕНЬКІ ФОТО -->
+            <div class="gallery-thumbnails">
+
+                <!-- Фото 1 -->
+                <img src="images/t1.png" alt="">
+
+                <!-- Фото 2 -->
+                <img src="images/t2.png" alt="">
+
+                <!-- Фото 3 -->
+                <img src="images/t3.png" alt="">
+
+            </div>
+        </div>
+
+        <!-- ПРАВА ЧАСТИНА -->
+        <div class="product-info">
+
+            <!-- КАТЕГОРІЯ -->
+            <p class="product-page-category">
+                ДЕКОРАТИВНІ
+            </p>
+
+            <!-- НАЗВА -->
+            <h1 class="product-page-title">
+                Таця з агату
+            </h1>
+
+            <!-- ЦІНА -->
+            <p class="product-page-price">
+                380 ₴
+            </p>
+
+            <!-- ОПИС -->
+            <p class="product-page-description">
+                Вишукана таця з натурального агату, яка поєднує естетику подорожей та сучасного стилю.
+                 Її гладка поверхня та природні переливи каменю створюють атмосферу елегантності.
+                 Ідеально підходить для прикрас, аксесуарів чи дрібних декоративних елементів —
+                 кожна річ виглядатиме особливо на такому витонченому акценті.
+            </p>
+
+            <!-- ХАРАКТЕРИСТИКИ -->
+            <div class="product-meta">
+                <p><strong>Матеріал:</strong> агат</p>
+                <p><strong>Колір:</strong> природні відтінки каменю</p>
+                <p><strong>Розмір:</strong> 25 × 18 см</p>
+            </div>
+
+            <!-- КІЛЬКІСТЬ -->
+            <div class="product-actions">
+
+                <select class="quantity-select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+                <button class="add-to-cart-btn">
+                    Додати в кошик
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- СХОЖІ ТОВАРИ -->
+    <section class="related-products">
+
+        <h2>Вам також може сподобатись</h2>
+
+        <div class="related-grid">
+
+            <!-- КАРТКА -->
+            <div class="related-item">
+
+                <!-- КАРТИНКА -->
+               <img src="images/p1.png" alt=""> 
+
+                <p class="related-name">
+                    Бетонна свічка
+                </p>
+
+                <span class="related-price">
+                    560 ₴
+                </span>
+
+            </div>
+
+            <div class="related-item">
+                <img src="images/p2.png" alt="">
+                <p class="related-name">
+                    Керамічна ваза
+                </p>
+                <span class="related-price">
+                    920 ₴
+                </span>
+            </div>
+
+            <div class="related-item">
+                <img src="images/p3.png" alt="">
+                <p class="related-name">
+                    Аромадифузор
+                </p>
+                <span class="related-price">
+                    690 ₴
+                </span>
+            </div>
+
+            <div class="related-item">
+                <img src="images/p4.png" alt="">
+                <p class="related-name">
+                    Таця Ivory
+                </p>
+                <span class="related-price">
+                    840 ₴
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-logo-row">
+                        <span class="footer-logo">NOOK</span>
+                        <a href="#" class="btn-contacts">Контакти</a>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#">Instagram</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <h3>Бажаєте унікальний декор?<br>Залиште email і ми зв'яжемося з вами</h3>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Email" required>
+                        <button type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2026, All rights reserved</p>
+                <div class="footer-legal">
+                    <a href="#">Оферта</a>
+                    <a href="#">Угода користувача</a>
+                    <a href="#">Політика конфіденційності</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
